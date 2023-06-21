@@ -1,4 +1,4 @@
-FROM codesimple/elm:latest
+FROM codesimple/elm:0.19
 
 # Create app directory
 WORKDIR /app
