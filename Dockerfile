@@ -11,6 +11,8 @@ COPY . .
 RUN npm install -g gulp
 RUN npm install -g elm
 
-CMD [ "node", "index.js" ]
+RUN yarn build
+
+CMD [ "yarn", "start" ]
 
 EXPOSE 3000
