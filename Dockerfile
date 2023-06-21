@@ -1,4 +1,4 @@
-FROM docker.io/library/node:16-alpine
+FROM andreysenov/node-gyp:latest
 
 # Create app directory
 WORKDIR /app
