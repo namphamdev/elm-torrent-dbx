@@ -1,4 +1,4 @@
-FROM andreysenov/node-gyp:latest
+FROM codesimple/elm:latest
 
 # Create app directory
 WORKDIR /app
