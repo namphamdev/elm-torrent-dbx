@@ -8,8 +8,6 @@ RUN yarn install
 
 # Bundle app source
 COPY . .
-RUN npm install -g gulp
-RUN npm install -g elm
 
 RUN yarn build
 
