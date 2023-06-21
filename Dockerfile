@@ -13,6 +13,6 @@ RUN npm install -g elm
 
 RUN yarn build
 
-CMD [ "yarn", "start" ]
+CMD [ "node", "index.js" ]
 
-EXPOSE 3000
+EXPOSE 4000
