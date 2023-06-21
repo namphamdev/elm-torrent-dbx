@@ -4,12 +4,12 @@ FROM codesimple/elm:0.19
 WORKDIR /app
 
 COPY package*.json yarn.lock ./
-RUN yarn install
+RUN npm install
 
 # Bundle app source
 COPY . .
 
-RUN yarn build
+RUN npm build
 
 CMD [ "node", "index.js" ]
 
