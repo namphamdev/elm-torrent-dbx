@@ -7,12 +7,12 @@ RUN apk add --update python3 make g++\
 WORKDIR /app
 
 COPY package*.json yarn.lock ./
-RUN npm install
+RUN yarn install
 
 # Bundle app source
 COPY . .
 
-RUN npm build
+RUN yarn build
 
 CMD [ "node", "index.js" ]
 
