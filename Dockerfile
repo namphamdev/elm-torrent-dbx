@@ -1,4 +1,4 @@
-FROM codesimple/elm:0.19
+FROM docker.io/library/node:16-alpine
 
 # Create app directory
 WORKDIR /app
